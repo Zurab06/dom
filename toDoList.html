@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>интукод</title>
+</head>
+
+<body>
+    <div id="main">
+        <ul id="list">
+            <li>html</li>
+            <li>css</li>
+        </ul>
+    </div>
+    <div id="copyright">(c) INTOCODE</div>
+    <script>
+        const addText = () => {
+            const h1 = document.createElement('h1')
+            h1.textContent = 'работа с dom'
+            document.body.prepend.h1
+        }
+        const textDiv = () => {
+            const main = document.getElementById('main')
+            const h1 = document.createElement('h1')
+            h1.textContent = 'https://learn.javascript.ru/modifying-document'
+            return main.append(h1)
+        }
+        const changeColor = (color) => {
+            document.body.style = color
+        }
+        const newLi = (addLi) => {
+            const newLi = document.createElement('li')
+            const list = document.querySelector('#list')
+            newLi.textContent = addLi
+            list.append(newLi)
+        }
+
+        const deleteBlock = () => {
+            const elemento = document.querySelector('#copyright')
+            elemento.remove()
+
+
+
+        }
+
+        textDiv()
+        newLi('k.reht;i6ejgijgt')
+        deleteBlock()
+    </script>
+</body>
+
+</html>
